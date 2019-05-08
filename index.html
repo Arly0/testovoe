@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Путшевствия по Украине</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/ui-bootstrap-castom.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+
+<!--arrow to up-->
+<div class="border-arrow hidden">
+    <div class="table-cell">
+        <div class="svg-conatiner">
+            <img src="img/arrow.svg" alt="" class="arrow-to-up">
+        </div>
+    </div>
+</div>
+
+<!-- first block - menu-->
+<header class="header" id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Тестовое задание" class="logo__image">
+                    <h5 class="logo__title">
+                        Мережа готелів
+                    </h5>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <nav class="head-nav">
+                    <ul class="head-nav__list d-flex">
+                        <li class="head-nav__item"><a href="#tours" class="menu__link scrollto">Тури</a></li>
+                        <li class="head-nav__item"><a href="#service" class="menu__link scrollto">Проживання</a></li>
+                        <li class="head-nav__item"><a href="#hotels" class="menu__link scrollto">Послуги</a></li>
+                        <li class="head-nav__item"><a href="#video" class="menu__link scrollto">Відгуки</a></li>
+                        <li class="head-nav__item"><a href="#footer" class="menu__link scrollto">Контакти</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-3">
+                <div class="telephones">
+                    <ul class="telephones__list">
+                        <li class="telephones__item">
+                            <a href="tel:0800505365" class="telephones__link"><span>0 800 505 365</span> (Безкоштовно) </a>
+                        </li>
+                        <li class="telephones__item d-flex">
+                            <img src="img/vodafone.png" alt="" class="telephones__operator vodaphone">
+                            <a href="tel:0800505365" class="telephones__link">080 050-53-65</a>
+                        </li>
+                        <li class="telephones__item d-flex">
+                            <img src="img/Kyivstar.png" alt="" class="telephones__operator kyivstar">
+                            <a href="tel:0675240524" class="telephones__link">067 524-05-24</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="language">
+                <select name="lang" id="">
+                    <option class="selectOption" selected disabled value="select">Вибір мови</option>
+                    <option class="selectOption" value="select">Украинська</option>
+                    <option class="selectOption" value="select">Русский</option>
+                    <option class="selectOption" value="select">Английский</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--slider section-->
+<section class="slider" id="slider">
+    <div class="dark">
+    <div class="container">
+        <div class="row">
+            <!--<div class="owl-slider owl-carousel owl-theme">-->
+                <div class="item-owl owl-carousel owl-theme">
+                    <div>
+                    <div class="content">
+                        <h1 class="conent__title">
+                            відкривай <br> <span>україну 365</span>
+                        </h1>
+                    </div>
+                    <button href="#footer" class="scrollto slider__btn">
+                        дізнатися більше
+                    </button>
+                </div>
+                    <div>
+                    <div class="content">
+                        <h1 class="conent__title">
+                            2відкривай <br> <span>україну 365</span>
+                        </h1>
+                    </div>
+                    <!--</div>-->
+
+                    <!--<div class="col-lg-3">-->
+                    <button href="#footer" class="scrollto slider__btn">
+                        дізнатися більше
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!--section filtra-->
+
+<section class="filtr" id="filtr">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="more_info">
+                    <p class="filtr__find">
+                        Шукайте пропозиції
+                    </p>
+                </div>
+                <div class="w">
+                    <div class="d-grid filtr-grid">
+                        <div class="filtr__select">
+
+                            <i class="fas fa-map-marker-alt fa" aria-hidden="true"></i>
+                            <input type="text" value="Куда ви би хотiли" class="city">
+
+                            <div class="select_city hidden">
+                                <div class="sel_city-item city-1">Кривий Рiг, Днепр. обл.
+                                </div>
+                                <div class="sel_city-item city-2">Харкiв, Харкiвська обл.
+                                </div>
+                                <div class="sel_city-item city-3">Одеса, Одеська обл.
+                                </div>
+                                <div class="sel_city-item city-4">Санжари, Полтавська обл.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filtr__calendar">
+                            <i class="sec fa far fa-calendar"></i>
+
+                            <input value="Заїзд - Від’їзд" type="text" id="date_range" class="calendar" readonly>
+                        </div>
+
+                        <div class="filtr__quat">
+                            <i class="thir fa fas fa-user"></i>
+
+                            <input value="3 номера - 2 дорослих - 0 дітей" type="text" class="quantity">
+                            <div class="buy__quant hidden">
+        <div class="buy__quant-num d-grid">
+            <p class="qunat-text">
+                Номерiв
+            </p>
+
+            <div class="quantity d-flex">
+                <p class="minus">
+                    -
+                </p>
+
+                <p class="quantity-num">
+                    3
+                </p>
+
+                <p class="plus">
+                    +
+                </p>
+            </div>
+        </div>
+        <div class="buy__quant-old d-grid">
+            <p class="qunat-text">
+                Дорослих
+            </p>
+
+            <div class="quantity d-flex">
+                <p class="minus">
+                    -
+                </p>
+
+                <p class="quantity-num">
+                    2
+                </p>
+
+                <p class="plus">
+                    +
+                </p>
+            </div>
+        </div>
+        <div class="buy__quant-young d-grid">
+            <p class="qunat-text">
+                Дiтей
+            </p>
+
+            <div class="quantity d-flex">
+                <p class="minus">
+                    -
+                </p>
+
+                <p class="quantity-num">
+                    0
+                </p>
+
+                <p class="plus">
+                    +
+                </p>
+            </div>
+        </div>
+    </div>
+                        </div>
+
+                        <div class="filtr__subm">
+
+                            <input value="знайти" type="submit" class="subm">
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<!--section tours-->
+<section class="tours" id="tours">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 ">
+                <h2 class="tours__title">
+                    Тижневі тури «Все включено»
+                </h2>
+            </div>
+            <div class="col-lg-12">
+                <div class="owl-carousel owl-theme owl2">
+                <div class="tour">
+                    <div class="tour__image gallery-1">
+                        <p class="tour__mess">
+                            Знижка 10%
+                        </p>
+                    </div>
+                    <div class="tour__price">
+                        <div class="d-flex container-tour">
+                            <img src="img/price.svg" alt="" class="tour__price-img">
+                            <p class="tour__price-value">
+                                від 1 800 грн
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tour__descr">
+                        <div class="tour__title">
+                            <h4 class="tour__title-text">
+                                Тижневий тур «Карпати - Ворохта цілий рік»
+                            </h4>
+                        </div>
+                        <div class="tour__text">
+                            <p class="tour__text-text">
+                                8 варіантів відпочинку на вибір щодня,
+                                Говерла, Рафтинг, Почаївська лавра,
+                                + з листопада по квітень - «Лижний тур
+                                на Буковель».
+                            </p>
+                        </div>
+                        <div class="tour__stars">
+                            <div class="d-flex">
+                                <p class="tour__stars-text">
+                                    Готель
+                                </p>
+                                <div class="stars d-flex">
+                                    <div class="svg-container">
+                                    <img src="img/star.svg" alt="" class="stars__item"> </div>
+                                    <div class="svg-container">
+
+                                    <img src="img/star.svg" alt="" class="stars__item">
+                                    </div>
+                                    <div class="svg-container">
+                                    <img src="img/star.svg" alt="" class="stars__item">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tour__callback">
+                            <div class="d-flex">
+                                <p class="tour__callback-rate">
+                                    9.0
+                                </p>
+                                <p class="tour__callback-title">
+                                    Чудово
+                                </p>
+                                <div class="tour__callback-dot"></div>
+                                <p class="tour__callback-quant">
+                                    12 відгуків
+                                </p>
+                                <div class="svg-container">
+                                    <img src="img/like.svg" alt="" class="tour__callback-like">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tour">
+                    <div class="tour__image gallery-2">
+                        <p class="tour__mess">
+                            ТОП пропозиція
+                        </p>
+                    </div>
+                    <div class="tour__price">
+                        <div class="d-flex container-tour">
+                            <img src="img/price.svg" alt="" class="tour__price-img">
+                            <p class="tour__price-value">
+                                від 2 700 грн
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tour__descr">
+                        <div class="tour__title">
+                            <h4 class="tour__title-text">
+                                Тижневий тур Трускавець 365 - Карпати - Львів - Закарпаття
+                            </h4>
+                        </div>
+                        <div class="tour__text">
+                            <p class="tour__text-text">
+                                Активно-оздоровчо-екскурсійний
+                                тижневий тур ...
+                            </p>
+                        </div>
+                        <div class="tour__stars">
+                            <div class="d-flex">
+                                <p class="tour__stars-text">
+                                    Готель
+                                </p>
+                                <div class="stars d-flex">
+                                    <div class="svg-container">
+                                        <img src="img/star.svg" alt="" class="stars__item"> </div>
+                                    <div class="svg-container">
+
+                                        <img src="img/star.svg" alt="" class="stars__item">
+                                    </div>
+                                    <div class="svg-container">
+                                        <img src="img/star.svg" alt="" class="stars__item">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tour__callback">
+                            <div class="d-flex">
+                                <p class="tour__callback-rate">
+                                    9.0
+                                </p>
+                                <p class="tour__callback-title">
+                                    Чудово
+                                </p>
+                                <div class="tour__callback-dot"></div>
+                                <p class="tour__callback-quant">
+                                    12 відгуків
+                                </p>
+                                <div class="svg-container">
+                                    <img src="img/like.svg" alt="" class="tour__callback-like">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="tour">
+                    <div class="tour__image gallery-3">
+                        <!--<p class="tour__mess">-->
+                            <!--Знижка 10%-->
+                        <!--</p>-->
+                    </div>
+                    <div class="tour__price">
+                        <div class="d-flex container-tour">
+                            <img src="img/price.svg" alt="" class="tour__price-img">
+                            <p class="tour__price-value">
+                                від 2 000 грн
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tour__descr">
+                        <div class="tour__title">
+                            <h4 class="tour__title-text">
+                                Тижневий тур
+                                «ЧЕРКАЩИНА 365»
+                            </h4>
+                        </div>
+                        <div class="tour__text">
+                            <p class="tour__text-text">
+                                Шевченківський національний заповідник
+                                у Каневі, край Богдана Хмельницького - Чигиринщина, Холодний Яр.
+                            </p>
+                        </div>
+                        <div class="tour__stars">
+                            <div class="d-flex">
+                                <p class="tour__stars-text">
+                                    Готель
+                                </p>
+                                <div class="stars d-flex">
+                                    <div class="svg-container">
+                                        <img src="img/star.svg" alt="" class="stars__item"> </div>
+                                    <div class="svg-container">
+
+                                        <img src="img/star.svg" alt="" class="stars__item">
+                                    </div>
+                                    <div class="svg-container">
+                                        <img src="img/star.svg" alt="" class="stars__item">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tour__callback">
+                            <div class="d-flex">
+                                <p class="tour__callback-rate">
+                                    9.0
+                                </p>
+                                <p class="tour__callback-title">
+                                    Чудово
+                                </p>
+                                <div class="tour__callback-dot"></div>
+                                <p class="tour__callback-quant">
+                                    12 відгуків
+                                </p>
+                                <div class="svg-container">
+                                    <img src="img/like.svg" alt="" class="tour__callback-like">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--service section-->
+
+<section class="service" id="service">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="service__titile">
+                    У вартість туру включено
+                </h2>
+                <div class="service-icons d-grid">
+                    <div class="icons__item">
+                        <img src="img/service1.png" alt="" class="icons__img">
+                        <p class="icons__text">
+                            Проживання 7 днів у готелі мережі
+                            «Відпочинок 365»
+                        </p>
+                    </div>
+                    <div class="icons__item">
+                        <img src="img/service2.png" alt="" class="icons__img">
+                        <p class="icons__text">
+                            Трансфер з вокзалів
+                        </p>
+                    </div>
+                    <div class="icons__item">
+                        <img src="img/service3.png" alt="" class="icons__img">
+                        <p class="icons__text">
+                            Харчування
+                        </p>
+                    <!--</div>-->
+                </div>
+
+                <!--<div class="service-icons d-grid">-->
+                    <div class="icons__item">
+                        <img src="img/service4.png" alt="" class="icons__img">
+                        <p class="icons__text">
+                            Щоденні автобусні екскурсії
+                        </p>
+                    </div>
+                    <div class="icons__item">
+                        <img src="img/service5.png" alt="" class="icons__img">
+                        <p class="icons__text">
+                            Щоденні незабутні походи
+                            та подорожі
+                        </p>
+                    </div>
+                    <div class="icons__item">
+                        <img src="img/service6.png" alt="" class="icons__img">
+                        <p class="icons__text">
+                            Вечірні розважальні шоу
+                            програми
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--VIDEO section-->
+
+<section class="video" id="video">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <iframe class="video-youtube" src="https://www.youtube.com/embed/8pm_KoguqPM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="video__title">
+                    Чому нас обирають?
+                </h2>
+
+                <div class="video__reasons">
+                    <div class="reason__block d-grid">
+                        <div class="reason__item">
+                            <img src="img/video1.svg" alt="" class="reason__image">
+                                <p class="reason__item-text">
+                                    Сім‘я готелів «Відпочинок 365» складається з гостинних та затишних готелів - «Ворохта 365» 3-зірковий , «Трускавець 365» 4-зірковий , «Київ 365» 4-зірковий , «Черкащина 365» 3-зірковий.
+                                </p>
+                        </div>
+                        <div class="reason__item">
+                            <img src="img/video4.svg" alt="" class="reason__image">
+                            <p class="reason__item-text">
+                                Сьогодні Мережа Готелів «Відпочинок 365» є лідером організації відпочинку в Україні за ціною - якістю - доступністю.
+                            </p>
+                        </div>
+
+
+                        <div class="reason__item">
+                            <img src="img/video2.svg" alt="" class="reason__image">
+                            <p style="margin-top: 10px;" class="reason__item-text">
+                                Вже більше 10 років наша мережа займається організацією комфортного та пізнавального відпочинку.
+                            </p>
+                        </div>
+                        <div class="reason__item">
+                            <img src="img/video5.svg" alt="" class="reason__image">
+                            <p class="reason__item-text">
+                                Ми поєднуємо комфортний відпочинок, подорожі
+                                та оздоровлення, що не залежать від погоди та пори року. Всі готелі об'єднані спільними якостями - гостинність, бажанням догодити та зробити приємне гостю.
+                            </p>
+                        </div>
+
+
+                        <div class="reason__item">
+                            <img src="img/video3.svg" alt="" class="reason__image">
+                            <p class="reason__item-text">
+                                В наших Тижневих Турах «Все Включено» ми надаємо
+                                не тільки якісні готельні послуги, але й знайомимо гостей
+                                з Карпатами, Закарпаттям, Львівщиною та Черкащиною
+                                у всій їх красі та різноманітті.
+                            </p>
+                        </div>
+                        <div class="reason__item">
+                            <img src="img/video5.svg" alt="" class="reason__image">
+                            <p class="reason__item-text">
+                                Ми робимо комфортним та доступним для усіх гірськолижний відпочинок та маємо власний курорт «Крутогір 365»
+                            </p>
+                        </div>
+
+
+
+                        <div class="reason__item">
+                            <img src="img/video7.svg" alt="" class="reason__image">
+                            <p class="reason__item-text">
+                                Гарантуємо якість та Повернемо Гроші за послуги,
+                                які не сподобалися! Запрошуємо в Гості!
+                            </p>
+                        </div>
+                        <div class="reason__item">
+                            <img src="img/video8.svg" alt="" class="reason__image">
+                            <p class="reason__item-text">
+                                Ми багато подорожуємо та переймаємо кращі практики
+                                на свої готелі та Тижневі Тури «Все Включено». Саме тому ми отримуємо велику кількість позитивних відгуків, рекомендацій та повторних приїздів від наших гостей.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--hotels section-->
+
+<section class="hotels" id="hotels">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="hostels__title">
+                    Готельні послуги
+                </h2>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="owl2 owl-carousel owl-theme">
+                <div class="tour">
+                    <div class="tour__image hotel1">
+                        <p class="tour__mess">
+                            Акція
+                        </p>
+                    </div>
+                    <div class="tour__price">
+                        <div class="d-flex container-tour">
+                            <img src="img/price.svg" alt="" class="tour__price-img">
+                            <p class="tour__price-value">
+                                від 2 000 грн
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tour__descr">
+                        <div class="tour__title">
+                            <h4 class="tour__title-text">
+                                Туристичний комплекс «Трускавець»
+                            </h4>
+                        </div>
+                        <div class="tour__text">
+                            <p class="tour__text-text">
+                                м.Трускавець
+                            </p>
+                        </div>
+                        <div class="tour__stars">
+                            <div class="d-flex">
+                                <!--<p class="tour__stars-text">-->
+                                    <!--Готель-->
+                                <!--</p>-->
+                                <div class="stars d-flex">
+                                    <div class="svg-container">
+                                        <img src="img/star.svg" alt="" class="stars__item"> </div>
+                                    <div class="svg-container">
+
+                                        <img src="img/star.svg" alt="" class="stars__item">
+                                    </div>
+                                    <div class="svg-container">
+                                        <img src="img/star.svg" alt="" class="stars__item">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tour__callback">
+                            <div class="d-flex">
+                                <p class="tour__callback-rate">
+                                    9.0
+                                </p>
+                                <p class="tour__callback-title">
+                                    Чудово
+                                </p>
+                                <div class="tour__callback-dot"></div>
+                                <p class="tour__callback-quant">
+                                    12 відгуків
+                                </p>
+                                <div class="svg-container">
+                                    <img src="img/like.svg" alt="" class="tour__callback-like">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour">
+                    <div class="tour__image hotel2">
+                        <!--<p class="tour__mess">-->
+                            <!--Знижка 10%-->
+                        <!--</p>-->
+                    </div>
+                    <div class="tour__price">
+                        <div class="d-flex container-tour">
+                            <img src="img/price.svg" alt="" class="tour__price-img">
+                            <p class="tour__price-value">
+                                від 1 000 грн
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tour__descr">
+                        <div class="tour__title">
+                            <h4 class="tour__title-text">
+                                Готель «Ворохта»
+                            </h4>
+                        </div>
+                        <div class="tour__text">
+                            <p class="tour__text-text">
+                                с. Ворохта
+                            </p>
+                        </div>
+                        <div class="tour__stars">
+                            <div class="d-flex">
+                                <p class="tour__stars-text">
+                                    Без рейтингу
+                                </p>
+                                <!--<div class="stars d-flex">-->
+                                    <!--<div class="svg-container">-->
+                                        <!--<img src="img/star.svg" alt="" class="stars__item"> </div>-->
+                                    <!--<div class="svg-container">-->
+
+                                        <!--<img src="img/star.svg" alt="" class="stars__item">-->
+                                    <!--</div>-->
+                                    <!--<div class="svg-container">-->
+                                        <!--<img src="img/star.svg" alt="" class="stars__item">-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                        <div class="tour__callback">
+                            <div class="d-flex">
+                                <p class="tour__callback-rate">
+                                    9.0
+                                </p>
+                                <p class="tour__callback-title">
+                                    Чудово
+                                </p>
+                                <div class="tour__callback-dot"></div>
+                                <p class="tour__callback-quant">
+                                    12 відгуків
+                                </p>
+                                <div class="svg-container">
+                                    <img src="img/like.svg" alt="" class="tour__callback-like">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour">
+                    <div class="tour__image hotel3">
+                        <!--<p class="tour__mess">-->
+                            <!--Знижка 10%-->
+                        <!--</p>-->
+                    </div>
+                    <div class="tour__price">
+                        <div class="d-flex container-tour">
+                            <img src="img/price.svg" alt="" class="tour__price-img">
+                            <p class="tour__price-value">
+                                від 3 300 грн
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tour__descr">
+                        <div class="tour__title">
+                            <h4 class="tour__title-text">
+                                Готель «Київ»
+                            </h4>
+                        </div>
+                        <div class="tour__text">
+                            <p class="tour__text-text">
+                                м. Київ
+                            </p>
+                        </div>
+                        <div class="tour__stars">
+                            <div class="d-flex">
+                                <p class="tour__stars-text">
+                                    Готель
+                                </p>
+                                <div class="stars d-flex">
+                                    <div class="svg-container">
+                                        <img src="img/star.svg" alt="" class="stars__item"> </div>
+                                    <div class="svg-container">
+
+                                        <img src="img/star.svg" alt="" class="stars__item">
+                                    </div>
+                                    <div class="svg-container">
+                                        <img src="img/star.svg" alt="" class="stars__item">
+                                    </div>
+                                    <div class="svg-container">
+                                        <img src="img/star.svg" alt="" class="stars__item">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tour__callback">
+                            <div class="d-flex">
+                                <p class="tour__callback-rate">
+                                    9.0
+                                </p>
+                                <p class="tour__callback-title">
+                                    Чудово
+                                </p>
+                                <div class="tour__callback-dot"></div>
+                                <p class="tour__callback-quant">
+                                    12 відгуків
+                                </p>
+                                <div class="svg-container">
+                                    <img src="img/like.svg" alt="" class="tour__callback-like">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--footer section-->
+
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h3 class="footer__map">
+                    Карта сайту
+                </h3>
+                <div class="d-grid map-content">
+                    <a href="#" class="map__item">
+                        Тури
+                    </p>
+                    <a href="#" class="map__item">
+                        Проживання
+                    </a>
+                    <a href="#" class="map__item">
+                        Партнерам
+                    </a>
+                    <a href="#" class="map__item">
+                        Часто задавані питання
+                    </a>
+                    <a href="#" class="map__item">
+                        Послуги
+                    </a>
+                    <a href="#" class="map__item">
+                        Відгуки
+                    </a>
+                    <a href="#" class="map__item">
+                        Блог
+                    </a>
+                    <a href="#" class="map__item">
+                        Контакти copy
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="footer-contacts">
+                    <h3 class="contacts__title">
+                        Контакти
+                    </h3>
+                    <a href="tel:0 800 505 365" class="contacts__phone">0 800 505 365 <span>(Безкоштовно)</span></a>
+                    <a href="tel:080 050-53-65" class="contacts__phone small">080 050-53-65</a><br>
+                    <a href="tel:067 524-05-24" class="contacts__phone small">067 524-05-24</a>
+<br><br>
+                    <a href="mailto:tur365@gmail.com" class="contacts__phone small" >tur365@gmail.com</a>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="d-grid threefr">
+                    <div class="social__facebook">
+                        <h3 class="facebook__title">
+                            Ми на Facebook
+                        </h3>
+                        <div class="facebook__city d-flex">
+                            <div class="svg-container">
+                                <img src="img/facebook.svg" alt="" class="facebook">
+                            </div>
+                            <a href="#" class="facebook__text">
+                                Черкаси 365
+                            </a>
+                        </div>
+                        <div class="facebook__city d-flex">
+                            <div class="svg-container">
+                                <img src="img/facebook.svg" alt="" class="facebook">
+                            </div>
+                            <a href="#" class="facebook__text">
+                                Київ 365
+                            </a>
+                        </div>
+                        <div class="facebook__city d-flex">
+                            <div class="svg-container">
+                                <img src="img/facebook.svg" alt="" class="facebook">
+                            </div>
+                            <a href="#" class="facebook__text">
+                                Ялта 365
+                            </a>
+                        </div>
+                        <div class="facebook__city d-flex">
+                            <div class="svg-container">
+                                <img src="img/facebook.svg" alt="" class="facebook">
+                            </div>
+                            <a href="#" class="facebook__text">
+                                Трускавець 365
+                            </a>
+                        </div>
+                        <div class="facebook__city d-flex">
+                            <div class="svg-container">
+                                <img src="img/facebook.svg" alt="" class="facebook">
+                            </div>
+                            <a href="#" class="facebook__text">
+                                Ворохта 365                            </a>
+                        </div>
+                    </div>
+
+                    <div class="social__facebook">
+                        <h3 class="facebook__title">
+                            Ми в Instagram
+                        </h3>
+                        <div class="facebook__city d-flex">
+                            <div class="svg-container">
+                                <img src="img/instagram.svg" alt="" class="facebook">
+                            </div>
+                            <a href="#" class="facebook__text">
+                                Трускавець 365
+                            </a>
+                        </div>
+                        <div class="facebook__city d-flex">
+                            <div class="svg-container">
+                                <img src="img/instagram.svg" alt="" class="facebook">
+                            </div>
+                            <a href="#" class="facebook__text">
+                                Ворохта 365
+                            </a>
+                        </div>
+                        <div class="facebook__city d-flex">
+                            <div class="svg-container">
+                                <img src="img/instagram.svg" alt="" class="facebook">
+                            </div>
+                            <a href="#" class="facebook__text">
+                                Київ 365
+                            </a>
+                        </div>
+                        <div class="facebook__city d-flex">
+                            <div class="svg-container">
+                                <img src="img/instagram.svg" alt="" class="facebook">
+                            </div>
+                            <a href="#" class="facebook__text">
+                                Ялта 365
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="social__facebook">
+                        <h3 class="facebook__title">
+                            Ми на YouTube
+                        </h3>
+                        <div class="facebook__city d-flex">
+                            <div class="svg-container">
+                                <img src="img/youtube.svg" alt="" class="facebook">
+                            </div>
+                            <a href="#" class="facebook__text">
+                                Київ 365
+                            </a>
+                        </div>
+                        <div class="facebook__city d-flex">
+                            <div class="svg-container">
+                                <img src="img/youtube.svg" alt="" class="facebook">
+                            </div>
+                            <a href="#" class="facebook__text">
+                                Ялта 365
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form action="php.php" method="post">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="footer__form-title">
+                    Підписка
+                </h3>
+            </div>
+            <form action="php.php" method="post">
+            <div class="col-lg-2">
+
+                    <input autocomplete="off" type="text" name="name" class="footer__input" required placeholder="Ваше ім’я">
+            </div>
+                <div class="col-lg-2">
+                    <input autocomplete="off" type="text" name="mail" class="footer__input" required placeholder="Ваш E-mail">
+                </div>
+                <div class="col-lg-2">
+                    <button class="footer__form-sbm" type="submit" >
+                        підписатися
+                    </button>
+
+                </div>
+
+        </div>
+        </form>
+    </div>
+</footer>
+
+<input type="hidden" name="startDate">
+<input type="hidden" name="endDate">
+<!--last footer politics  section-->
+
+<section class="exit" id="exit">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="title">
+                    © 2014-2019 ВІДОЧИНОК 365. Всі права захищені.
+                </h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://rawgit.com/Artemeey/5ebc39370e568c34f03dce1639cabee8/raw/47db88126d546652b2b61f287b509386a0ecb167/jquery.datepicker.extension.range.min.js"></script>
+<script>
+    $(function() {
+        $('#date_range').datepicker({
+            range: 'period', // режим - выбор периода
+            numberOfMonths: 2,
+            onSelect: function (dateText, inst, extensionRange) {
+                // extensionRange - объект расширения
+                $('#date_range').val(extensionRange.startDateText + ' - ' + extensionRange.endDateText);
+            }
+        });
+    });
+
+</script>
+<script src="js/owl.js"></script>
+<script>
+    $(document).ready(function() {
+        // Owl Carousel
+        var owl = $(".owl2");
+        owl.owlCarousel({
+            items: 3,
+            dots: false,
+            margin: 50,
+            loop: true,
+            nav: true,
+            responsive:{
+                1200:{
+                    items: 3,
+                },
+                900:{
+                    items: 2,
+                },
+                425:{
+                    items: 1,
+                },
+                0:{
+                    items:1,
+                },
+            },
+            navText: [
+                '<img src="img/nav.svg" class="nav-l black">',
+                '<img src="img/nav.svg" class="nav-r black">'
+            ],
+
+            autoplay: false,
+            //autoplayTimeout: 8000,
+            //autoplayHoverPause: true,
+            //dotsContainer: '.dots',
+        });
+
+        $('.item-owl').owlCarousel({
+            items: 1,
+            dots: false,
+            // margin: 50,
+            loop: true,
+            nav: true,
+            navText: [
+                '<img src="img/arrowWhite.svg" class="nav-l white">',
+                '<img src="img/arrowWhite.svg" class="nav-r white">'
+            ],
+
+            autoplay: false,
+        });
+    });
+</script>
+<script src="js/arrowUp.js"></script>
+<script src="js/footerIcons.js"></script>
+<script src="js/openQuant.js"></script>
+<script src="js/selectCity.js"></script>
+<script src="js/navColor.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".scrollto").on("click", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 1000);
+        });
+
+        $(".border-arrow").click(function () {
+            $('body, html').animate({
+                scrollTop: 0
+            }, 1500);
+        });
+/*
+        let  quant = $('.quantity').val();
+        let num = quant.split('-')[0];
+        let oldP = quant.split('-')[1];
+        let youngP = quant.split('-')[2];
+        num = num.match(/[0-9]/);
+        oldP = oldP.match(/[0-9]/);
+        youngP = youngP.match(/[0-9]/);
+        console.log(num+';'+ oldP+';'+ youngP);
+        */
+
+        let num = $('.buy__quant-num').find('.quantity-num');
+        let old = $('.buy__quant-old').find('.quantity-num');
+        let young = $('.buy__quant-young').find('.quantity-num');
+
+        $(num).change(function () {
+             let numV = num.text();
+             console.log(numV + 'hi');
+        });
+    });
+</script>
+</body>
+</html>
